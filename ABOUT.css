@@ -1,0 +1,274 @@
+/*! base css star  */
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+    margin-top:2px;
+    color: #bcd0f7;
+    background: #1A233A;
+  font-family: "Electrolize", sans-serif;
+}
+/*! base css star  */
+
+/*! navbar star  */
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.Logo{
+    font-size: 30px;
+    color: rgb(255, 70, 70);
+    cursor: pointer;
+    right: 10px;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  list-style: none;
+}
+
+.menu-list-item {
+  cursor: pointer;
+}
+
+.menu-list-item:hover {
+  font-weight: bold;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+
+.menu-list a{
+  text-decoration: none;
+  color: white;
+}
+
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-text-container {
+  margin: 0 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-settings {
+  cursor: pointer;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s ease all;
+}
+/*! navbar end  */
+
+/*! sidebar start  */
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.left-menu-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+/*! sidebar end  */
+
+.container {
+  background-color: #000;
+  color: white;
+}
+
+
+
+
+/*! dark mode start  */
+.container.active {
+    background-color: white;
+  }
+  
+  .movie-list-title.active {
+    color: black;
+  }
+  
+  .navbar-container.active {
+    background-color: white;
+    color: black;
+  }
+  
+  .sidebar.active {
+    background-color: white;
+  }
+  
+  .left-menu-icon.active {
+    color: black;
+  }
+  
+  .toggle.active {
+    background-color: black;
+  }
+  
+  .toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px);
+  }
+  
+  .movie-list-filter select.active {
+    background-color: white;
+    color: black;
+  }
+  /*! dark mode end  */
+  
+  /*! responsive start  */
+  @media only screen and (max-width: 940px) {
+    .menu-container {
+      display: none;
+    }
+  
+    .featured-content {
+      height: 50vh;
+    }
+  
+    .featured-title {
+      width: 200px;
+    }
+  
+    .featured-desc {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      padding: 0;
+      -webkit-box-orient: vertical;
+      max-width: 200px;
+    }
+    .featured-desc:hover{ 
+      transform: scale(1.2);
+      margin: 0 30px;
+      opacity: 0.5;
+    }
+  }
+  /*! responsive end  */
+
+
+
+    .account-settings .user-profile {
+        margin: 0 0 1rem 0;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+    .account-settings .user-profile .user-avatar {
+        margin: 0 0 1rem 0;
+    }
+    .account-settings .user-profile .user-avatar img {
+        width: 90px;
+        height: 90px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+    }
+    .account-settings .user-profile h5.user-name {
+        margin: 0 0 0.5rem 0;
+    }
+    .account-settings .user-profile h6.user-email {
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .account-settings .about {
+        margin: 1rem 0 0 0;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .card {
+        background: #272E48;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: 0;
+        margin-bottom: 1rem;
+    }
+    .form-control {
+        border: 1px solid #596280;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        font-size: .825rem;
+        background: #1A233A;
+        color: #bcd0f7;
+    }

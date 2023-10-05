@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Film Mekanı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/x-icon" href="img/logo12.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
+        integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    .bi .bi-caret-down-fill {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .bi .bi-caret-down-fill:hover,
+    .bi .bi-caret-down-fill:focus {
+        background-color: #2980B9;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Film Mekanı</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="http://127.0.0.1:5500/index.html">Ana Sayfa</a></li>
+                    <li class="menu-list-item">Filmler</li>
+                    <li class="menu-list-item">Diziler</li>
+                    <li class="menu-list-item">Popüler</li>
+                    <li class="menu-list-item"><a href="http://127.0.0.1:5500/hakkımızda.html">Hakkımızda</a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile1.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text btn-right 50px">Hesabım</span>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn bi bi-caret-down-fill"></button>
+                        <div id="myDropdown" class="dropdown-content bi bi-caret-down-fill">
+                            <a href="profile.html">Ayarlar</a>
+                            <a href="#about">Destek</a>
+                            <a href="#contact">Çıkış Yap</a>
+                        </div>
+                    </div>
+                    <div class="toggle">
+                        <i class="bi bi-moon-fill toggle-icon"></i>
+                        <i class="bi bi-brightness-high-fill toggle-icon"></i>
+                        <div class="toggle-ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon bi bi-search"></i>
+        <i class="left-menu-icon bi bi-house-door-fill"></i>
+        <i class="left-menu-icon bi bi-people-fill"></i>
+        <i class="left-menu-icon bi bi-bookmarks-fill"></i>
+        <i class="left-menu-icon bi bi-hourglass-top"></i>
+        <i class="left-menu-icon bi bi-cart-fill"></i>
+        <i class="left-menu-icon bi bi-gear-fill"></i>
+    </div>
+
+    <div class="container">
+        <div class="row gutters">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="account-settings">
+                            <div class="user-profile">
+                                <div class="user-avatar">
+                                    <img src="img/profile.png" Maxwell Admin">
+                                </div>
+                                <h5 class="user-name">Bizimle İletişime Geçin</h5>
+                                <h6 class="user-email">serkantaho@hotmail.com</h6>
+                            </div>
+                            <div class="about">
+                                <h5 class="mb-2 text-primary">Hakkımızda</h5>
+                                <p>Merhaba, Biz Kimiz; Bizler 2023 Yılında Film Mekanı Adında Siz değerli
+                                    izleyicilerimize hizmet ve güncel filmleri sizlere sunmaktan onur duyar sözü
+                                    şimdilik burada sonlandırıyorum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h6 class="mb-3 text-primary">Kişisel detaylar</h6>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="fullName">Ad ve Soyad </label>
+                                    <input type="text" class="form-control" id="fullName"
+                                        placeholder="İsim ve Soyisim giriniz">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="eMail">Eposta</label>
+                                    <input type="email" class="form-control" id="eMail"
+                                        placeholder="Mailinizi giriniz.">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="phone">Telefon</label>
+                                    <input type="text" class="form-control" id="phone"
+                                        placeholder="Numaranızı giriniz.">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="website">Sorun Yaşadığınız Sayfa</label>
+                                    <input type="url" class="form-control" id="website"
+                                        placeholder="Yaşamakta olduğunuz alanın linkini giriniz.">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row gutters">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <h6 class="mb-3 text-primary">Address</h6>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="Street">Street</label>
+                                        <input type="name" class="form-control" id="Street" placeholder="Enter Street">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="ciTy">City</label>
+                                        <input type="name" class="form-control" id="ciTy" placeholder="Enter City">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="sTate">State</label>
+                                        <input type="text" class="form-control" id="sTate" placeholder="Enter State">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="zIp">Zip Code</label>
+                                        <input type="text" class="form-control" id="zIp" placeholder="Zip Code">
+                                    </div>
+                                </div>
+                            </div> -->
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="text-right">
+                                    <button type="button" id="submit" name="submit" class="btn btn-secondary">İptal
+                                        Et</button>
+                                    <button type="button" id="submit" name="submit"
+                                        class="btn btn-primary">Gönder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
